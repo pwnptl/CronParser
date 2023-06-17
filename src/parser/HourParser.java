@@ -15,7 +15,7 @@ public class HourParser extends AbstractCronParser {
 
     @Override
     protected void setPrefixString() {
-        this.prefixString = "Hour of the Day (0-24): ";
+        this.prefixString = "Hour of the Day (0-23): ";
     }
 
 }
