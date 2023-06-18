@@ -25,7 +25,7 @@ public class CronParserTest {
 //        System.out.println(actualResult);
 //        System.out.println();
 
-        String result = "[[Minute of the Hour (0-59): , 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59], [Hour of the Day (0-24): , 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], [Day of Month (1-31): , 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31], [Month of the Year (1-12): , 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], [Weekday(s) of the Day (0 SUNDAY- 6 SATURDAY): , 0, 1, 2, 3, 4, 5, 6]]";
+        String result = "[[Minute of the Hour (0-59): , 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59], [Hour of the Day (0-23): , 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], [Day of Month (1-31): , 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31], [Month of the Year (1-12): , 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], [Weekday(s) of the Day (0 SUNDAY- 6 SATURDAY): , 0, 1, 2, 3, 4, 5, 6]]";
         assert result.equals(actualResult.toString());
     }
 
@@ -38,7 +38,7 @@ public class CronParserTest {
 //        System.out.println(actualResult);
 //        System.out.println();
 
-        String result = "[[Minute of the Hour (0-59): , 1], [Hour of the Day (0-24): , 2], [Day of Month (1-31): , 3], [Month of the Year (1-12): , 4], [Weekday(s) of the Day (0 SUNDAY- 6 SATURDAY): , 5]]";
+        String result = "[[Minute of the Hour (0-59): , 1], [Hour of the Day (0-23): , 2], [Day of Month (1-31): , 3], [Month of the Year (1-12): , 4], [Weekday(s) of the Day (0 SUNDAY- 6 SATURDAY): , 5]]";
         assert result.equals(actualResult.toString());
     }
     @Test
@@ -50,7 +50,7 @@ public class CronParserTest {
 //        System.out.println(actualResult);
 //        System.out.println();
 
-        String result = "[[Minute of the Hour (0-59): , 1], [Hour of the Day (0-24): , 2, 3, 4, 5, 6, 7, 8, 9, 10], [Day of Month (1-31): , 3], [Month of the Year (1-12): , 4], [Weekday(s) of the Day (0 SUNDAY- 6 SATURDAY): , 5]]";
+        String result = "[[Minute of the Hour (0-59): , 1], [Hour of the Day (0-23): , 2, 3, 4, 5, 6, 7, 8, 9, 10], [Day of Month (1-31): , 3], [Month of the Year (1-12): , 4], [Weekday(s) of the Day (0 SUNDAY- 6 SATURDAY): , 5]]";
         assert result.equals(actualResult.toString());
     }
 
@@ -63,7 +63,7 @@ public class CronParserTest {
 //        System.out.println(actualResult);
 //        System.out.println();
 
-        String result = "[[Minute of the Hour (0-59): , 1], [Hour of the Day (0-24): , 2, 10], [Day of Month (1-31): , 3], [Month of the Year (1-12): , 4], [Weekday(s) of the Day (0 SUNDAY- 6 SATURDAY): , 5]]";
+        String result = "[[Minute of the Hour (0-59): , 1], [Hour of the Day (0-23): , 2, 10], [Day of Month (1-31): , 3], [Month of the Year (1-12): , 4], [Weekday(s) of the Day (0 SUNDAY- 6 SATURDAY): , 5]]";
         assert result.equals(actualResult.toString());
     }
 
@@ -77,7 +77,7 @@ public class CronParserTest {
 //        System.out.println(actualResult);
 //        System.out.println();
 
-        String result = "[[Minute of the Hour (0-59): , 1], [Hour of the Day (0-24): , 0, 10, 20], [Day of Month (1-31): , 3], [Month of the Year (1-12): , 4], [Weekday(s) of the Day (0 SUNDAY- 6 SATURDAY): , 5]]";
+        String result = "[[Minute of the Hour (0-59): , 1], [Hour of the Day (0-23): , 0, 10, 20], [Day of Month (1-31): , 3], [Month of the Year (1-12): , 4], [Weekday(s) of the Day (0 SUNDAY- 6 SATURDAY): , 5]]";
         assert result.equals(actualResult.toString());
     }
 
